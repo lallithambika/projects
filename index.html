@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily & Monthly To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>📝 To-Do List</h1>
+
+    <!-- Daily Tasks -->
+    <section>
+      <h2>🗓️ Daily Tasks</h2>
+      <div class="input-container">
+        <input type="text" id="dailyInput" placeholder="Enter daily task...">
+        <button onclick="addTask('daily')">Add</button>
+      </div>
+      <ul id="dailyList"></ul>
+    </section>
+
+    <!-- Monthly Tasks -->
+    <section>
+      <h2>📅 Monthly Tasks</h2>
+      <div class="input-container">
+        <input type="text" id="monthlyInput" placeholder="Enter monthly task...">
+        <button onclick="addTask('monthly')">Add</button>
+      </div>
+      <ul id="monthlyList"></ul>
+    </section>
+
+    <button class="toggle-mode" onclick="toggleMode()">🌙 Toggle Dark Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
